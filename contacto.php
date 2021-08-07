@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -33,14 +33,13 @@
 
 <body>
     <!-- Loader Start -->
-    
     <div class="css-loader">
         <div class="loader-inner line-scale d-flex align-items-center justify-content-center"></div>
     </div>
     <!-- Loader End -->
     <!-- Header Start -->
     <header class="position-absolute w-100">
-        <div class=libre4>
+        <div class="libre4">
         <div class="container">
             <div class="top-header d-none d-sm-flex justify-content-between align-items-center">
                 <div class="contact">
@@ -77,89 +76,77 @@
 			   	<a class="d-sm-none" href="https://correo.redimidosdejehova.org"><img alt="Servidor de Correo" src="assets/images/correo-electronico.png" width=32 height=32  /></a>
                            </ul>
  </div>
-		
-            <?php include("header.php") ?>
+            <?php include("header.php")  ?>
             </nav>
         </div>
     </div>
     </header>
     <!-- Header End -->
-    <!-- Recent Posts Start -->
-    <br><br><br><br><br><br><br><br><br>
-    <div class="title text-center">
-        <h6>Nuestros recuerdos</h6>
-        <h1 class="title-blue">Galería</h1>
-    </div>
-        <div class="contenedor">
-            <a href="albun1.html">
-                    <figure>
-                        <img src="Galeria\albunes\cumplepastor82\cumple1.jpg" alt="">
-                        <div class="capa">
-                            <h5>Cumpleaños del 81 del Pastor</h5>
-                            <p>
-                                Hermosa celebración del cumpleaños del pastor en la iglesia de la victoria
-                            </p>
+    <!-- Hero Start -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 offset-md-1 col-md-11">
+                    <div class="swiper-container hero-slider">
+                        <div class="swiper-wrapper">
+                        
                         </div>
-                    </figure>
-            </a>
-            <a href="albun2.html">
-                <figure>
-                    <img src="Galeria\albunes\contruccioncocal\13.jpg" alt="">
-                    <div class="capa">
-                        <h5>Construcción del Templo</h5>
-                        <p>
-                            Avance de la construcción del templo del cocal
-                        </p>
                     </div>
-                </figure>
-          </a>
-          <a href="albun3.html">
-            <figure>
-                <img src="Galeria\albunes\ninossanmartin\15.jpg" alt="">
-                <div class="capa">
-                    <h5>Actividad de Niños</h5>
-                    <p>
-                        Fiesta de niños, en Iglesia San Martín
-                    </p>
+                    </div>
                 </div>
-            </figure>
-      </a>
+            </div>
+            </div>
+            <!-- Add Control -->
+            <span class="arr-left"><i class="fa fa-angle-left"></i></span>
+            <span class="arr-right"><i class="fa fa-angle-right"></i></span>
         </div>
-        <?php include("footer.php") ?>
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-        
-         <script src="https://www.google.com/recaptcha/api.js?render=6LcbeUcaAAAAALbTEMH4a3xVY2USMQHWh4d6zeUJ"></script>
-       
-       <script>
-          $(document).ready(function(){
-            $('#enviar').click(function(){
-                grecaptcha.ready(function() {
-                    grecaptcha.execute('6LcbeUcaAAAAALbTEMH4a3xVY2USMQHWh4d6zeUJ', {action: 'submit'}).then(function(token) {
-                        $('#form-enviar').prepend('<input type="hidden" name="token" value="'+token+'" >');
-                        $('#form-enviar').prepend('<input type="hidden" name="action" value="submit" >');
-                        $('#form-enviar').submit();
-                  });
-                 });    
-            })
-          })
-       
-      </script>
-     
-        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
-        <!-- form logic -->
-        <script src="assets/js/index.js"></script>
-        <!-- Footer Endt -->
-        <!--jQuery-->
-        <script src="assets/js/jquery-3.3.1.js"></script>
-        <!--Plugins-->
-        <script src="assets/js/bootstrap.bundle.js"></script>
-        <script src="assets/js/loaders.css.js"></script>
-        <script src="assets/js/aos.js"></script>
-        <script src="assets/js/swiper.min.js"></script>
-        <script src="assets/js/lightgallery-all.min.js"></script>
-        <!--Template Script-->
-        <script src="assets/js/main.js"></script>
-    </body>
+        <div class="texture"></div>
+        <div class="diag-bg"></div>
+    </section>
+    <br><br><br><br><br><br><br>
+    <!-- Hero End -->
+    <!-- Call To Action Start -->
+    <section class="cta" data-aos="fade-up" data-aos-delay="0">
+    </section>
+    <!-- Call To Action End -->
+    <!-- Services Start -->
+    <!-- Footer Start -->
+    <?php include("footer.php") ?>
     
-    </html>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+     <script src="https://www.google.com/recaptcha/api.js?render=6LcbeUcaAAAAALbTEMH4a3xVY2USMQHWh4d6zeUJ"></script>
+   
+   <script>
+      $(document).ready(function(){
+        $('#enviar').click(function(){
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6LcbeUcaAAAAALbTEMH4a3xVY2USMQHWh4d6zeUJ', {action: 'submit'}).then(function(token) {
+                    $('#form-enviar').prepend('<input type="hidden" name="token" value="'+token+'" >');
+                    $('#form-enviar').prepend('<input type="hidden" name="action" value="submit" >');
+                    $('#form-enviar').submit();
+              });
+             });    
+        })
+      })
+   
+  </script>
+ 
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <!-- form logic -->
+    <script src="assets/js/index.js"></script>
+    <!-- Footer Endt -->
+    <!--jQuery-->
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <!--Plugins-->
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/loaders.css.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/lightgallery-all.min.js"></script>
+    <!--Template Script-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

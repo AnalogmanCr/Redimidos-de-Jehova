@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -33,14 +33,13 @@
 
 <body>
     <!-- Loader Start -->
-    
     <div class="css-loader">
         <div class="loader-inner line-scale d-flex align-items-center justify-content-center"></div>
     </div>
     <!-- Loader End -->
     <!-- Header Start -->
     <header class="position-absolute w-100">
-        <div class=libre4>
+        <div class="libre4">
         <div class="container">
             <div class="top-header d-none d-sm-flex justify-content-between align-items-center">
                 <div class="contact">
@@ -76,90 +75,88 @@
 			   <ul class="nav social d-md-flex">
 			   	<a class="d-sm-none" href="https://correo.redimidosdejehova.org"><img alt="Servidor de Correo" src="assets/images/correo-electronico.png" width=32 height=32  /></a>
                            </ul>
- </div>
-		
-            <?php include("header.php") ?>
+            </div>
+                <?php include("header.php") ?>
             </nav>
         </div>
-    </div>
+        </div>
     </header>
     <!-- Header End -->
     <!-- Recent Posts Start -->
-    <br><br><br><br><br><br><br><br><br>
-    <div class="title text-center">
-        <h6>Nuestros recuerdos</h6>
-        <h1 class="title-blue">Galería</h1>
-    </div>
-        <div class="contenedor">
-            <a href="albun1.html">
-                    <figure>
-                        <img src="Galeria\albunes\cumplepastor82\cumple1.jpg" alt="">
-                        <div class="capa">
-                            <h5>Cumpleaños del 81 del Pastor</h5>
-                            <p>
-                                Hermosa celebración del cumpleaños del pastor en la iglesia de la victoria
-                            </p>
+    <br><br><br><br><br><br><br>
+    <section class="recent-posts">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-left" data-aos-duration="800">
+                        <div class="post-thumb">
+                            <!-- AQUI VA EL VIDEO -->
+                            <iframe width="300" height="200" src="https://www.youtube.com/embed/u7lPvClGb4Y?rel=0&loop=1&playlist=u7lPvClGb4Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
-                    </figure>
-            </a>
-            <a href="albun2.html">
-                <figure>
-                    <img src="Galeria\albunes\contruccioncocal\13.jpg" alt="">
-                    <div class="capa">
-                        <h5>Construcción del Templo</h5>
-                        <p>
-                            Avance de la construcción del templo del cocal
-                        </p>
+                        <div class="post-content">
+                            <time datetime="2019-04-06T13:53">2 Junio, 20</time>
+                            <h3><a href="#">No pierdas el gozo</a></h3>
+                            <p><a href="#">Roger Salazar</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                </figure>
-          </a>
-          <a href="albun3.html">
-            <figure>
-                <img src="Galeria\albunes\ninossanmartin\15.jpg" alt="">
-                <div class="capa">
-                    <h5>Actividad de Niños</h5>
-                    <p>
-                        Fiesta de niños, en Iglesia San Martín
-                    </p>
                 </div>
-            </figure>
-      </a>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-left" data-aos-duration="800">
+                        <div class="post-thumb">
+                            <!-- AQUI VA EL VIDEO -->
+                            <iframe width="300" height="200" src="https://www.youtube.com/embed/kNskhsyYTfU?rel=0&loop=1&playlist=kNskhsyYTfU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="post-content">
+                            <time datetime="2019-04-06T13:53">8 Junio, 20</time>
+                            <h3><a href="#">La importancia de la oración</a></h3>
+                            <p><a href="#">Dennis Salazar</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <?php include("footer.php") ?>
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-        
-         <script src="https://www.google.com/recaptcha/api.js?render=6LcbeUcaAAAAALbTEMH4a3xVY2USMQHWh4d6zeUJ"></script>
-       
-       <script>
-          $(document).ready(function(){
-            $('#enviar').click(function(){
-                grecaptcha.ready(function() {
-                    grecaptcha.execute('6LcbeUcaAAAAALbTEMH4a3xVY2USMQHWh4d6zeUJ', {action: 'submit'}).then(function(token) {
-                        $('#form-enviar').prepend('<input type="hidden" name="token" value="'+token+'" >');
-                        $('#form-enviar').prepend('<input type="hidden" name="action" value="submit" >');
-                        $('#form-enviar').submit();
-                  });
-                 });    
-            })
-          })
-       
-      </script>
-     
-        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
-        <!-- form logic -->
-        <script src="assets/js/index.js"></script>
-        <!-- Footer Endt -->
-        <!--jQuery-->
-        <script src="assets/js/jquery-3.3.1.js"></script>
-        <!--Plugins-->
-        <script src="assets/js/bootstrap.bundle.js"></script>
-        <script src="assets/js/loaders.css.js"></script>
-        <script src="assets/js/aos.js"></script>
-        <script src="assets/js/swiper.min.js"></script>
-        <script src="assets/js/lightgallery-all.min.js"></script>
-        <!--Template Script-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    </section>
+
+    <div class="test-pagination"></div>
     
-    </html>
+    <?php include("footer.php") ?>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+     <script src="https://www.google.com/recaptcha/api.js?render=6LcbeUcaAAAAALbTEMH4a3xVY2USMQHWh4d6zeUJ"></script>
+   
+   <script>
+      $(document).ready(function(){
+        $('#enviar').click(function(){
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6LcbeUcaAAAAALbTEMH4a3xVY2USMQHWh4d6zeUJ', {action: 'submit'}).then(function(token) {
+                    $('#form-enviar').prepend('<input type="hidden" name="token" value="'+token+'" >');
+                    $('#form-enviar').prepend('<input type="hidden" name="action" value="submit" >');
+                    $('#form-enviar').submit();
+              });
+             });    
+        })
+      })
+   
+  </script>
+ 
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <!-- form logic -->
+    <script src="assets/js/index.js"></script>
+    <!-- Footer Endt -->
+    <!--jQuery-->
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <!--Plugins-->
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/loaders.css.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/lightgallery-all.min.js"></script>
+    <!--Template Script-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
