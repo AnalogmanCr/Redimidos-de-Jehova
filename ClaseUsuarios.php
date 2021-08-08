@@ -20,5 +20,12 @@
                 return false;
             }
         }
+        public function GetRol($email){
+            $consulta = "SELECT ROL FROM USUARIOS WHERE EMAIL = :correo"; 
+            $resultado = $this->dbconexion->prepare($consulta);
+            $resultado->execute(array(":correo"=>$email));
+            $registro =  $resultado->fetch(PDO::FETCH_ASSOC);
+            return $registro['ROL'];
+        }
     }
 ?>

@@ -19,15 +19,17 @@
         </style>
         <?php
             if(isset($_SESSION['usuario'])){
-                echo ("<li class='nav-item dropdown'>
-                <a class='nav-link' href='#' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
-                  Administrar
-                </a>
-                <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
-                  <a class='dropdown-item' href='#'>Registrar Usuarios</a>
-                  <a class='dropdown-item' href='#'>Datos de Usuarios</a>
-                </div>
-                </li>");
+                if($_SESSION['rol']=='ADMINISTRADOR'){
+                    echo ("<li class='nav-item dropdown'>
+                    <a class='nav-link' href='#' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                    Administrar
+                    </a>
+                    <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
+                    <a class='dropdown-item' href='#'>Registrar Usuarios</a>
+                    <a class='dropdown-item' href='#'>Datos de Usuarios</a>
+                    </div>
+                    </li>");
+                }
             }
         ?>
          </div>
